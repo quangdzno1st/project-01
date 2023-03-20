@@ -5,8 +5,14 @@
 :root {
   --primary-color: #0f1b4c;
 }
+
+html,
+body {
+  scroll-behavior: smooth;
+}
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,7 +63,11 @@ a {
   /* width: 144rem; */
   position: relative;
 
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: calc(100vh - 90px);
   background: #e6f0ff;
 }
 .navbar {
@@ -98,9 +108,6 @@ a {
   padding-top: 13px;
   padding-bottom: 13px;
   border-radius: 8px;
-}
-.hero {
-  padding-top: 130px;
 }
 .hero .info {
   width: 51%;
